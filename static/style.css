@@ -1,0 +1,49 @@
+body {
+    margin: none;
+    padding: none;
+    
+    font-family: monospace;
+}
+
+/*
+    justify-content: center; - Horizontal center 
+    align-items: center;     -  Vertical center 
+*/
+
+.header {
+    position: sticky;
+    top: 0;
+    margin: 0, auto;
+    padding: 15px;
+    
+    font-family: cursive;
+    font-weight: bold;
+
+    color: rgb(70, 43, 59);
+    background-color: salmon;
+
+    border-radius: 5px;
+    border-style: hidden;
+}
+
+.content {
+    margin: 0, auto;
+    margin-top: 10px;
+    height: fit-content;
+
+    border-radius: 5px;
+    justify-content: center;
+
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+
+    text-align: center;
+}
+
+.link {
+    color: black;
+}
+
+.link:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
+}
