@@ -1,0 +1,15 @@
+{
+  "name": "database-connection-practice",
+  "version": "1.0.0",
+  "description": "practicing connecting websites to a sql database",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "Leo Maskell",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
