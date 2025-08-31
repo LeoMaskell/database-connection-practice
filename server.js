@@ -2,17 +2,25 @@ const express = require("express");
 const app = express();
 const port = 3000;
 
-const db = require('./backend/db/db');
-
 app.use(express.json());
+
+
+const db = require('./backend/db/db');
+//database tester
+db.all('SELECT * FROM users', [], (err, rows) => {
+    if (err) {
+        console.log(err);
+        return;
+    }
+    console.log(rows);
+});
+
+
 
 // pages
 app.get("/", (req, res) => {
     res.sendFile(__dirname+"/frontend/index.html");
 });
-
-//database
-
 
 // static file
 app.get("/style.css", (req, res) => {
