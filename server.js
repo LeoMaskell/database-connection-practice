@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const port = 3000;
 
+const db = require('./backend/db/db');
 
 app.use(express.json());
 
@@ -10,7 +11,10 @@ app.get("/", (req, res) => {
     res.sendFile(__dirname+"/frontend/index.html");
 });
 
-// styles
+//database
+
+
+// static file
 app.get("/style.css", (req, res) => {
     res.sendFile(__dirname + "/static/style.css")
 });

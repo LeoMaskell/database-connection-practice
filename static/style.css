@@ -8,6 +8,7 @@ body {
 /*
     justify-content: center; - Horizontal center 
     align-items: center;     -  Vertical center 
+    text-align: center;      - center text
 */
 
 .header {
@@ -24,6 +25,8 @@ body {
 
     border-radius: 5px;
     border-style: hidden;
+
+    text-align: center;
 }
 
 .content {
