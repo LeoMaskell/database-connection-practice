@@ -16,7 +16,6 @@ db.all('SELECT * FROM users', [], (err, rows) => {
 });
 
 
-
 // pages
 app.get("/", (req, res) => {
     res.sendFile(__dirname+"/frontend/index.html");
