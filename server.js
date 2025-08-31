@@ -13,6 +13,7 @@ db.all('SELECT * FROM users', [], (err, rows) => {
         return;
     }
     console.log(rows);
+    console.log('DB test successful, the server will start now.');
 });
 
 
@@ -21,9 +22,14 @@ app.get("/", (req, res) => {
     res.sendFile(__dirname+"/frontend/index.html");
 });
 
+app.get("/db.html", (req, res) => {
+    res.sendFile(__dirname + "/frontend/db.html");
+});
+
+
 // static file
 app.get("/style.css", (req, res) => {
-    res.sendFile(__dirname + "/static/style.css")
+    res.sendFile(__dirname + "/static/style.css");
 });
 
 app.listen(port, '0.0.0.0', () => {

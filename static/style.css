@@ -29,6 +29,19 @@ body {
     text-align: center;
 }
 
+.header button {
+    border-radius: 2px;
+    border-width: 0;
+    border-style: hidden;
+    
+    padding: 2px, auto;
+    
+    background-color: rgb(250, 160, 150);
+    color: black;
+}
+
+
+
 .content {
     margin: 0, auto;
     margin-top: 10px;
