@@ -32,6 +32,10 @@ app.get("/style.css", (req, res) => {
     res.sendFile(__dirname + "/static/style.css");
 });
 
+app.get("/table.jpeg", (req, res) => {
+    res.sendFile(__dirname + "/static/table.jpeg");
+});
+
 app.listen(port, '0.0.0.0', () => {
     console.log(`Server running on http://0.0.0.0:${port}`);
 });
